@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
 import { projects } from "../utils/constants";
 import { Tilt } from "react-tilt";
 import { gt, globe } from "../assets";
@@ -71,7 +71,13 @@ const ProjectCard = (project: any, index: any) => {
 
 const Project = () => {
   return (
-    <div className="py-8 border-t-2 border-gray-500 sm:px-28 xl:px-20 lg:px-24 flex flex-col items-center justify-center px-4 ">
+    <motion.section
+      variants={staggerContainer("", "")}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="py-8 border-t-2 border-gray-500 sm:px-28 xl:px-20 lg:px-24 flex flex-col items-center justify-center px-4 "
+    >
       <motion.div variants={textVariant("")}>
         <p className="sm:text-[18px] text-[14px] dark:text-gray-300 text-gray-900 font-poppins font-bold uppercase tracking-wider">
           My Work
@@ -91,7 +97,7 @@ const Project = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </div>
+    </motion.section>
   );
 };
 

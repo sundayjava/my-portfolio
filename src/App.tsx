@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Navbar } from "./components/Navbar";
 import Hero from "./components/Hero";
 import Project from "./components/Project";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -10,8 +12,10 @@ const App = () => {
     <div className={darkTheme ? "dark" : ""}>
       <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-200 min-h-screen">
         <Navbar setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
-        <Hero/>
-        <Project/>
+        <Hero />
+        <Skills />
+        <Project />
+        <Contact />
       </div>
     </div>
   );

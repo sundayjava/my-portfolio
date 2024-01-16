@@ -3,6 +3,7 @@ import StarsCanvas from "./canvas/ProfileCanvas";
 import TypewriterComponent from "typewriter-effect";
 import dav from "../assets/dav.png";
 import { email, fb, gt, ig, ln, wt, x } from "../assets";
+import pdf from "../assets/SundayD-CV.pdf";
 
 const Hero = () => {
   return (
@@ -50,8 +51,15 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-start items-center sm:gap-10 gap-3 mt-4 sm:mt-8 lg:mt-10">
-          <button className="px-6 py-2 bg-gray-900 dark:bg-gray-600 text-white rounded-[10px]">Hire me</button>
-          <button className="px-6 py-2 text-gray-900 font-semibold font-comfortaa dark:text-white border-2 border-gray-900 dark:border-gray-400 rounded-[10px]">Resume</button>
+          <button className="px-6 py-2 bg-gray-900 dark:bg-gray-600 text-white rounded-[10px]">
+            Hire me
+          </button>
+          <button
+            className="px-6 py-2 text-gray-900 font-semibold font-comfortaa dark:text-white border-2 border-gray-900 dark:border-gray-400 rounded-[10px]"
+            onClick={() => window.open(pdf, "_blank")}
+          >
+            Resume
+          </button>
         </div>
       </div>
 

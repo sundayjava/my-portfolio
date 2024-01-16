@@ -71,7 +71,7 @@ const ProjectCard = (project: any, index: any) => {
 
 const Project = () => {
   return (
-    <div className="py-8 sm:px-28 xl:px-20 lg:px-24 flex flex-col items-center justify-center px-4 ">
+    <div className="py-8 border-t-2 border-gray-500 sm:px-28 xl:px-20 lg:px-24 flex flex-col items-center justify-center px-4 ">
       <motion.div variants={textVariant("")}>
         <p className="sm:text-[18px] text-[14px] dark:text-gray-300 text-gray-900 font-poppins font-bold uppercase tracking-wider">
           My Work

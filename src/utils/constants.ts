@@ -1,11 +1,4 @@
 import {
-  email,
-  fb,
-  gt,
-  ig,
-  ln,
-  wt,
-  x,
   java,
   springboot,
   others,

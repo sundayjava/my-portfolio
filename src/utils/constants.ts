@@ -12,7 +12,6 @@ import {
   goggl,
   hoob,
   portfolio,
-  quote,
 } from "../assets";
 
 export const navLinks = [

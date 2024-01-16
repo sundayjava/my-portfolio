@@ -19,6 +19,7 @@ import goggl from "./business/goggl.png";
 import hoob from "./business/hoob.png";
 import portfolio from "./business/portfolio.png";
 import quote from "./business/quote.png";
+import globe from "./globe.svg"
 
 export {
   email,
@@ -29,6 +30,7 @@ export {
   wt,
   x,
   java,
+  globe,
   springboot,
   others,
   javascript,

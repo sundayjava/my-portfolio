@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Comfortaa","Poppins", sans-serif;
+  font-family: "Comfortaa", "Poppins", sans-serif;
   background-color: transparent;
   scroll-behavior: smooth;
 }
@@ -109,22 +109,97 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*Hero Image Animation*/
-.img-anime{
+.img-anime {
   box-shadow: 4px 6px 8px 4px rgba(226, 226, 226, 0.2);
   animation: swing 5s infinite ease-in-out alternate;
 }
 
 @keyframes swing {
-  0%{
+  0% {
     transform: translateY(-25px);
   }
-  /* 30%{
-    transform: translateY(0px);
-  }
-  70%{
-    transform: translateY(20px);
-  } */
-  100%{
+  100% {
     transform: translateY(25px);
   }
+}
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+.black-gradient {
+  background: #1a202c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e5e7eb,
+    #1a202c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e5e7eb,
+    #1a202c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.green-text-gradient {
+  background: #0e107c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #645203
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #0a2515
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #0b213f,
+    #567b88
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #546d8f,
+    #0e313d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #3d3c24; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #4b1134,
+    #335358
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #0f352d,
+    #2c1919
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* canvas- styles */
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
 }

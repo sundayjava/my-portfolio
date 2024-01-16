@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Comfortaa","Poppins", sans-serif;
+  background-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  @apply lg:w-[6px] bg-[#0a192f];
+}
+body::-webkit-scrollbar-thumb {
+  @apply bg-[#8892b0] rounded-full;
+}
+
+/* Some gradient colors */
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+.bg-light-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #1a202c -78.47%,
+    #ffffff -278.56%,
+    #e5e7eb 91.61%
+  );
+}
+
+/* Text animation */
+.active-nav-animation::after {
+  content: "";
+  height: 4px;
+  background-color: #51555e;
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.6s;
+}
+
+.active-nav-animation:hover::after {
+  width: 50px;
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Navbar hamburger */
+.harmburger-open {
+  @apply flex flex-col gap-[5px] justify-center items-center;
+}
+
+.harmburger-open p {
+  @apply w-6 h-[2px] dark:bg-white bg-gray-800 rotate-0 relative origin-center transition-all ease-out duration-300;
+}
+
+.harmburger-close {
+  @apply gap-2;
+}
+
+.harmburger-close p {
+  @apply absolute;
+}
+
+.harmburger-close p:first-child {
+  @apply rotate-[135deg];
+}
+
+.harmburger-close p:nth-child(2) {
+  @apply w-0 h-0;
+}
+
+.harmburger-close p:last-child {
+  @apply -rotate-[135deg];
+}
+
+/*Hero Image Animation*/
+.img-anime{
+  box-shadow: 4px 6px 8px 4px rgba(226, 226, 226, 0.2);
+  animation: swing 5s infinite ease-in-out alternate;
+}
+
+@keyframes swing {
+  0%{
+    transform: translateY(-25px);
+  }
+  /* 30%{
+    transform: translateY(0px);
+  }
+  70%{
+    transform: translateY(20px);
+  } */
+  100%{
+    transform: translateY(25px);
+  }
+}

@@ -2,7 +2,7 @@ import { Tilt } from "react-tilt";
 import StarsCanvas from "./canvas/ProfileCanvas";
 import TypewriterComponent from "typewriter-effect";
 import dav from "../assets/dav.png";
-import pdf from "../assets/SundayD-CV.pdf";
+import pdf from "../assets/cv.pdf";
 import { contactinfo } from "../utils/constants";
 
 const Hero = () => {
@@ -74,7 +74,7 @@ const Hero = () => {
             alt="david-sunday"
             className="z-10 absolute top-0 left-0 right-0 bottom-0 m-auto dark:bg-gray-900 bg-gray-600 pt-3 w-[280px] h-[260px] rounded-[20px] img-anime"
           />
-          <div className="z-20 absolute sm:bottom-40 bottom-28 rounded-[9px] sm:left-32 xl:left-56 left-32 lg:left-38 bg-gray-900 px-3 py-2 cursor-pointer flex gap-2 items-center">
+          <div className="z-20 absolute sm:bottom-40 bottom-28 rounded-[9px] sm:left-32 xl:left-56 left-32 lg:left-38 bg-gray-900 px-3 py-2 cursor-pointer flex gap-x-3 gap-y-2 items-center">
             {contactinfo.map((contact, index) => (
               <a href={contact.url} target="_blank" key={index}>
                 <img

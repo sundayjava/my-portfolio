@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -16,6 +17,7 @@ const App = () => {
         <Skills />
         <Project />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

@@ -76,7 +76,7 @@ const Hero = () => {
           />
           <div className="z-20 absolute sm:bottom-40 bottom-28 rounded-[9px] sm:left-32 xl:left-56 left-32 lg:left-38 bg-gray-900 px-3 py-2 cursor-pointer flex gap-2 items-center">
             {contactinfo.map((contact, index) => (
-              <a href={contact.url} target="_blank">
+              <a href={contact.url} target="_blank" key={index}>
                 <img
                   src={contact.pic}
                   alt={`link${contact.url}`}

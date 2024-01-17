@@ -1,4 +1,11 @@
 import {
+  email,
+  fb,
+  gt,
+  ig,
+  ln,
+  wt,
+  x,
   java,
   springboot,
   others,
@@ -17,11 +24,11 @@ import {
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "About me",
   },
   {
-    id: "about",
-    title: "About",
+    id: "skill",
+    title: "Skills",
   },
   {
     id: "project",
@@ -31,6 +38,16 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+];
+
+export const contactinfo = [
+  { pic: email, url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sundaydavidudoekong@gmail.com" },
+  { pic: fb, url: "https://web.facebook.com/bianca.sunny.397/" },
+  { pic: gt, url: "https://github.com/sundayjava" },
+  { pic: ig, url: "https://www.instagram.com/sundaydavidudoekong/" },
+  { pic: ln, url: "https://www.linkedin.com/in/sunday-david-951369266" },
+  { pic: wt, url: "https://wa.me/message/OHCJXEQFXCUOB1" },
+  { pic: x, url: "https://x.com/Sunday_David_U?t=LImnpTdP5uy4-oRw90M8vA&s=09" },
 ];
 
 export const technologies = [
@@ -194,5 +211,5 @@ export const projects = [
     ],
     image: expense,
     source_code_link: "https://daily-expense-check.vercel.app",
-  },  
+  },
 ];

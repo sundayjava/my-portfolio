@@ -37,6 +37,7 @@ export const Navbar: React.FC<{
               onClick={() => setActive(link.title)}
             >
               <a
+                href={`#${link.id}`}
                 className={`${
                   active === link.title
                     ? "border-gray-800 bottom-0 dark:border-gray-300 border-b-4 dark:border-b-4"

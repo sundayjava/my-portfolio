@@ -2,12 +2,15 @@ import { Tilt } from "react-tilt";
 import StarsCanvas from "./canvas/ProfileCanvas";
 import TypewriterComponent from "typewriter-effect";
 import dav from "../assets/dav.png";
-import { email, fb, gt, ig, ln, wt, x } from "../assets";
 import pdf from "../assets/SundayD-CV.pdf";
+import { contactinfo } from "../utils/constants";
 
 const Hero = () => {
   return (
-    <div className="lg:flex lg:items-center lg:justify-center lg:flex-row sm:px-28 xl:px-20 lg:px-24 flex flex-col-reverse items-center justify-center px-4 lg:py-0 py-4">
+    <section
+      id="home"
+      className="lg:flex lg:items-center lg:justify-center lg:flex-row sm:px-28 xl:px-20 lg:px-24 flex flex-col-reverse items-center justify-center px-4 lg:py-0 py-4"
+    >
       <div className="flex-1 mt-10 lg:mt-0 flex flex-col items-center justify-center h-screen">
         <h1 className="sm:text-[30px] lg:text-[24px] xs:text-[26px] text-[19px]">
           I`m{" "}
@@ -16,7 +19,6 @@ const Hero = () => {
           </span>
         </h1>
         <p className="flex items-center gap-7 font-semibold">
-          -
           <TypewriterComponent
             options={{
               wrapperClassName: "text-[18px] font-comfortaa font-Comfortaa",
@@ -51,9 +53,11 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-start items-center sm:gap-10 gap-3 mt-4 sm:mt-8 lg:mt-10">
-          <button className="px-6 py-2 bg-gray-900 dark:bg-gray-600 text-white rounded-[10px]">
-            Hire me
-          </button>
+          <a href="#contact">
+            <button className="px-6 py-2 bg-gray-900 dark:bg-gray-600 text-white rounded-[10px]">
+              Hire me
+            </button>
+          </a>
           <button
             className="px-6 py-2 text-gray-900 font-semibold font-comfortaa dark:text-white border-2 border-gray-900 dark:border-gray-400 rounded-[10px]"
             onClick={() => window.open(pdf, "_blank")}
@@ -71,62 +75,20 @@ const Hero = () => {
             className="z-10 absolute top-0 left-0 right-0 bottom-0 m-auto dark:bg-gray-900 bg-gray-600 pt-3 w-[280px] h-[260px] rounded-[20px] img-anime"
           />
           <div className="z-20 absolute sm:bottom-40 bottom-28 rounded-[9px] sm:left-32 xl:left-56 left-32 lg:left-38 bg-gray-900 px-3 py-2 cursor-pointer flex gap-2 items-center">
-            <a href="#">
-              <img
-                src={email}
-                alt="email"
-                className=" w-[12px] h-[13px] sm:w-[14px] sm:h-[14px] cursor-pointer"
-              />
-            </a>
-            <a href="#">
-              {" "}
-              <img
-                src={fb}
-                alt="facebook"
-                className=" w-[12px] h-[13px] sm:w-[14px] sm:h-[14px] cursor-pointer"
-              />
-            </a>
-            <a href="#">
-              {" "}
-              <img
-                src={gt}
-                alt="github"
-                className=" w-[12px] h-[13px] sm:w-[14px] sm:h-[14px] cursor-pointer"
-              />
-            </a>
-            <a href="#">
-              <img
-                src={ig}
-                alt="instagram"
-                className=" w-[12px] h-[13px] sm:w-[14px] sm:h-[14px] cursor-pointer"
-              />
-            </a>
-            <a href="#">
-              <img
-                src={ln}
-                alt="linkedin"
-                className=" w-[12px] h-[13px] sm:w-[14px] sm:h-[14px] cursor-pointer"
-              />
-            </a>
-            <a href="#">
-              <img
-                src={wt}
-                alt="whatsapp"
-                className=" w-[12px] h-[13px] sm:w-[14px] sm:h-[14px] cursor-pointer"
-              />
-            </a>
-            <a href="#">
-              <img
-                src={x}
-                alt="twitter"
-                className=" w-[12px] h-[13px] sm:w-[14px] sm:h-[14px] cursor-pointer"
-              />
-            </a>
+            {contactinfo.map((contact, index) => (
+              <a href={contact.url} target="_blank">
+                <img
+                  src={contact.pic}
+                  alt={`link${contact.url}`}
+                  className=" w-[12px] h-[13px] sm:w-[14px] sm:h-[14px] cursor-pointer"
+                />
+              </a>
+            ))}
           </div>
           <StarsCanvas />
         </div>
       </Tilt>
-    </div>
+    </section>
   );
 };
 

@@ -8,13 +8,15 @@ const ProjectCard = (project: any, index: any) => {
   const { name, description, tags, image, source_code_link } = project;
 
   return (
-    <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+    <Tilt
+      options={{
+        max: 45,
+        scale: 1,
+        speed: 450,
+      }}
+    >
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className=" dark:bg-gray-800 bg-gray-400 p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
@@ -64,22 +66,23 @@ const ProjectCard = (project: any, index: any) => {
             </p>
           ))}
         </div>
-      </Tilt>
-    </motion.div>
+      </motion.div>
+    </Tilt>
   );
 };
 
 const Project = () => {
   return (
     <motion.section
+    id="project"
       variants={staggerContainer("", "")}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="py-8 border-t-2 border-gray-500 sm:px-28 xl:px-20 lg:px-24 flex flex-col items-center justify-center px-4 "
+      className="py-8 sm:px-28 xl:px-20 lg:px-24 flex flex-col items-center justify-center px-4 "
     >
       <motion.div variants={textVariant("")}>
-        <p className="sm:text-[18px] text-[14px] dark:text-gray-300 text-gray-900 font-poppins font-bold uppercase tracking-wider">
+        <p className="sm:text-[28px] text-[20px] dark:text-gray-300 text-gray-900 font-poppins font-bold uppercase tracking-wider">
           My Work
         </p>
       </motion.div>
@@ -89,7 +92,10 @@ const Project = () => {
           className="mt-3 text-center text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcase my skills and experience through
-          real-world examples of my work.
+          real-world examples of my work. Each project is briefly described with
+          links to repository and live demos in it. It reflects my ability to
+          solve complex problems, work with differnt technologies, and manage
+          projects effectively
         </motion.p>
       </div>
       <div className="mt-10 flex flex-wrap gap-7 justify-center items-center">

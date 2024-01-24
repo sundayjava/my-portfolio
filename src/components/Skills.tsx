@@ -11,7 +11,7 @@ const Skills = () => {
     initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.17 }}
-    className="mb-10 lg:mx-10 mx-2 rounded-[10px] relative bg-gray-700 flex py-8 flex-col gap-7 items-center"
+    className="mb-10 lg:mx-10 mx-2 rounded-[10px] relative bg-gray-700 flex py-8 flex-col gap-7 items-center scroll-pt-10"
     >
       <h1 className="text-[24px] font-black font-comfortaa uppercase text-gray-300">Tech Stack</h1>
     <div className="flex flex-row flex-wrap justify-center gap-10">

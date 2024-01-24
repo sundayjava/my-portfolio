@@ -17,7 +17,7 @@ const ProjectCard = (project: any, index: any) => {
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className=" dark:bg-gray-800 bg-gray-400 p-5 rounded-2xl sm:w-[360px] w-full"
+        className=" dark:bg-gray-800 bg-gray-400 p-5 rounded-2xl sm:w-[360px] w-full scroll-pt-10"
       >
         <div className="relative w-full h-[230px]">
           <img

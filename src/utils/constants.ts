@@ -45,7 +45,7 @@ export const contactinfo = [
   { pic: fb, url: "https://web.facebook.com/bianca.sunny.397/" },
   { pic: gt, url: "https://github.com/sundayjava" },
   { pic: ig, url: "https://www.instagram.com/sundaydavidudoekong/" },
-  { pic: ln, url: "https://www.linkedin.com/in/sunday-david-951369266" },
+  { pic: ln, url: "https://www.linkedin.com/in/sunday-udoekong-951369266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
   { pic: wt, url: "https://wa.me/message/OHCJXEQFXCUOB1" },
   { pic: x, url: "https://x.com/Sunday_David_U?t=LImnpTdP5uy4-oRw90M8vA&s=09" },
 ];

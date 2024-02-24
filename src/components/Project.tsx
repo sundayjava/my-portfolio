@@ -104,7 +104,7 @@ const Project = () => {
         ))}
       </div>
 
-      <div className="mt-4 bg-gray-300 p-2 rounded-sm">
+      <div className="mt-9 bg-gray-700 py-2 px-4 rounded-lg">
         <p>
           For more projects,
           <span className="font-black ml-2">

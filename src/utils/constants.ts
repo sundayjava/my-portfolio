@@ -15,7 +15,6 @@ import {
   reactjs,
   book,
   expense,
-  findme,
   goggl,
   hoob,
   portfolio,

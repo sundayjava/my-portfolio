@@ -28,6 +28,7 @@ const Hero = () => {
               strings: [
                 "Software Engineer",
                 "Fullstack Software Engineer",
+                "Nodejs Developer",
                 "ReactJs Developer",
                 "Springboot Backend Developer",
                 "Flutter Mobile Developer",

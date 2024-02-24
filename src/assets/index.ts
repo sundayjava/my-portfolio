@@ -20,6 +20,7 @@ import hoob from "./business/hoob.png";
 import portfolio from "./business/portfolio.png";
 import quote from "./business/quote.png";
 import globe from "./globe.svg"
+import node from "./node.jpeg"
 
 export {
   email,
@@ -44,4 +45,5 @@ export {
   hoob,
   portfolio,
   quote,
+  node
 };

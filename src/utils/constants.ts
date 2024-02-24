@@ -19,6 +19,7 @@ import {
   goggl,
   hoob,
   portfolio,
+  node
 } from "../assets";
 
 export const navLinks = [
@@ -66,6 +67,10 @@ export const technologies = [
   {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "Node JS",
+    icon: node,
   },
   {
     name: "Springboot",
@@ -150,27 +155,6 @@ export const projects = [
     source_code_link: "https://react-responsive-ui.vercel.app",
   },
   {
-    name: "Findme",
-    description:
-      "Web application that facilitate real-time communication between users, create rooms or classes and add others users for a group communication as well",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "chatengine.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: findme,
-    source_code_link: "https://findme-chat.netlify.app",
-  },
-  {
     name: "3D Portfolio",
     description:
       "A simple design that describe someones proffession using three js and other components",
@@ -211,5 +195,26 @@ export const projects = [
     ],
     image: expense,
     source_code_link: "https://daily-expense-check.vercel.app",
+  },
+  {
+    name: "Nodejs Auth Server",
+    description:
+      "A comprehensive server application that allows users to register and login to their platform, and also offers acurated statistic chart for comparison.",
+    tags: [
+      {
+        name: "Node",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Json web token",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: node,
+    source_code_link: "https://airclickpay-server.onrender.com",
   },
 ];

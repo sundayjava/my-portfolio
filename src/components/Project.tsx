@@ -108,7 +108,7 @@ const Project = () => {
         <p>
           For more projects,
           <span className="font-black ml-2">
-            <a className=" border-b-2 border-b-blue-600" href="https://github.com/sundayjava" target="_blank">
+            <a href="https://github.com/sundayjava" target="_blank">
               Visit Repository
             </a>
           </span>

@@ -104,11 +104,11 @@ const Project = () => {
         ))}
       </div>
 
-      <div>
+      <div className="mt-4 bg-gray-300 p-2 rounded-sm">
         <p>
           For more projects,
-          <span className="font-black">
-            <a href="https://github.com/sundayjava" target="_blank">
+          <span className="font-black ml-2">
+            <a className=" border-b-2 border-b-blue-600" href="https://github.com/sundayjava" target="_blank">
               Visit Repository
             </a>
           </span>

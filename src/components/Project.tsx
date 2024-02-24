@@ -74,7 +74,7 @@ const ProjectCard = (project: any, index: any) => {
 const Project = () => {
   return (
     <motion.section
-    id="project"
+      id="project"
       variants={staggerContainer("", "")}
       initial="hidden"
       whileInView="show"
@@ -95,13 +95,24 @@ const Project = () => {
           real-world examples of my work. Each project is briefly described with
           links to repository and live demos in it. It reflects my ability to
           solve complex problems, work with differnt technologies, and manage
-          projects effectively
+          projects effectively. Most project can be found in my repository
         </motion.p>
       </div>
       <div className="mt-10 flex flex-wrap gap-7 justify-center items-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
+      </div>
+
+      <div>
+        <p>
+          For more projects,
+          <span className="font-black">
+            <a href="https://github.com/sundayjava" target="_blank">
+              Visit Repository
+            </a>
+          </span>
+        </p>
       </div>
     </motion.section>
   );

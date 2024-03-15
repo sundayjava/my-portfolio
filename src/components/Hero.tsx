@@ -2,7 +2,7 @@ import { Tilt } from "react-tilt";
 import StarsCanvas from "./canvas/ProfileCanvas";
 import TypewriterComponent from "typewriter-effect";
 import dav from "../assets/dav.png";
-import pdf from "../assets/SundayD-Fullstack-Dev-CV.pdf";
+import pdf from "../assets/cv.pdf";
 import { contactinfo } from "../utils/constants";
 
 const Hero = () => {

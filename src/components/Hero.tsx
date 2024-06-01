@@ -26,32 +26,33 @@ const Hero = () => {
               delay: 50,
               loop: true,
               strings: [
-                "Software Engineer",
                 "Fullstack Software Engineer",
-                "Wordpress Developer",
-                "Nodejs Developer",
-                "ReactJs Developer",
                 "Springboot Backend Developer",
-                "Flutter Mobile Developer",
+                "NextJs Developer",
+                "ReactJs Developer",
+                "Nodejs Developer",
+                "Wordpress Developer",
               ],
             }}
           />
         </p>
         <p className="mt-5 font-comfortaa lg:px-14 px-0 font-light text-[16px] leading-7 lg:text-justify text-center dark:text-gray-200 text-gray-900">
-          Sunday is an experienced Software Engineer with years of experience in
-          the Computer Software Industry. He specializes in{" "}
-          <b>Reactjs, Springboot, Nodejs & Flutter/Dart </b> with a background in web
-          technologies. Sunday has a strong track record of designing, building,
-          deploying and hosting web, mobile, and other platform applications. He
-          has collaborated with cross-functional teams to deliver high-quality
-          products.
+          Sunday is a versatile and highly skilled Software Engineer, adept at
+          building, and designing scalable and performant systems. Proven
+          ability to translate architectures and designs into clean, and
+          maintainable code using{" "}
+          <b>Nextjs, Reactjs, Springboot, Nodejs & Wordpress </b>. Sunday has a
+          strong track record of designing, building, deploying and hosting web,
+          and backend services. He has collaborated with cross-functional teams
+          to deliver high-quality products for manay companies.
         </p>
         <p className=" mt-7 font-comfortaa lg:px-14 px-0 font-light text-[16px] leading-7 lg:text-justify text-center dark:text-gray-200 text-gray-900">
           Sunday is well-versed in various programming languages like
-          Javascript, Typescript, Java and other frameworks, and is focused on
-          Reactjs, Springboot, Nodejs & Flutter/Dart. His philosophy centers on creating
-          innovative and cost-effective software solutions that go beyond just
-          building software.
+          Javascript, Typescript, Java and other frameworks. His philosophy
+          centers on creating innovative and cost-effective software solutions
+          that go beyond just building software. Eager to apply experience in a
+          fast-paced atmosphere and contribute to a company developing unique
+          goods
         </p>
 
         <div className="flex justify-start items-center sm:gap-10 gap-3 mt-4 sm:mt-8 lg:mt-10">

@@ -104,15 +104,13 @@ const Project = () => {
         ))}
       </div>
 
-      <div className="mt-9 bg-gray-700 py-2 px-4 rounded-lg">
-        <p>
-          For more projects,
-          <span className="font-black ml-2">
+      <div className="mt-9 bg-gray-800 py-2 px-4 cursor-pointer rounded-lg hover:bg-slate-600">
+        
+          <span className="font-black ml-2 hover:underline ">
             <a href="https://github.com/sundayjava" target="_blank">
-              Visit Repository
+              View More
             </a>
           </span>
-        </p>
       </div>
     </motion.section>
   );

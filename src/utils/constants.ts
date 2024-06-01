@@ -18,6 +18,7 @@ import {
   goggl,
   hoob,
   portfolio,
+  next,
   node
 } from "../assets";
 
@@ -41,27 +42,31 @@ export const navLinks = [
 ];
 
 export const contactinfo = [
-  { pic: email, url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sundaydavidudoekong@gmail.com" },
+  { pic: email, url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sundayudoekong1@gmail.com" },
   { pic: fb, url: "https://web.facebook.com/bianca.sunny.397/" },
   { pic: gt, url: "https://github.com/sundayjava" },
   { pic: ig, url: "https://www.instagram.com/sundaydavidudoekong/" },
-  { pic: ln, url: "https://www.linkedin.com/in/sunday-udoekong-951369266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+  { pic: ln, url: "https://www.linkedin.com/in/sunday-udoekong-951369266" },
   { pic: wt, url: "https://wa.me/message/OHCJXEQFXCUOB1" },
   { pic: x, url: "https://x.com/Sunday_David_U?t=LImnpTdP5uy4-oRw90M8vA&s=09" },
 ];
 
 export const technologies = [
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
     name: "TypeScript",
     icon: typescript,
   },
   {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
     name: "Java",
     icon: java,
+  },
+  {
+    name: "Next JS",
+    icon: next,
   },
   {
     name: "React JS",

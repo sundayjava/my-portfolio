@@ -54,7 +54,7 @@ export const Navbar: React.FC<{
           type="button"
           onClick={() => props.setDarkTheme(!props.darkTheme)}
         >
-          {props.darkTheme ? "Light ☀️" : "Dark 🌙"}
+          {props.darkTheme ? "Dark 🌙" : "Light ☀️"}
         </button>
       </div>
 

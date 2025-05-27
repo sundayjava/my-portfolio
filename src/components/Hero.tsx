@@ -11,7 +11,7 @@ const Hero = () => {
       id="home"
       className="lg:flex lg:items-center lg:justify-center lg:flex-row sm:px-28 xl:px-20 lg:px-24 flex flex-col-reverse items-center justify-center px-4 lg:py-0 py-4"
     >
-      <div className="flex-1 mt-10 lg:mt-0 flex flex-col items-center justify-center h-screen">
+      <div className="flex-1 mt-10 lg:mt-20 flex flex-col items-center justify-center h-screen">
         <h1 className="sm:text-[30px] lg:text-[24px] xs:text-[26px] text-[19px]">
           I`m{" "}
           <span className="dark:text-gray-200 text-gray-700 font-poppins font-black">

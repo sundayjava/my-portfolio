@@ -1,7 +1,7 @@
 import { Tilt } from "react-tilt";
 import StarsCanvas from "./canvas/ProfileCanvas";
 import TypewriterComponent from "typewriter-effect";
-import dav from "../assets/dav.png";
+import dav from "../assets/dav1.jpg";
 import pdf from "../assets/cv.pdf";
 import { contactinfo } from "../utils/constants";
 
@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="flex-1 mt-10 lg:mt-0 flex flex-col items-center justify-center h-screen">
         <h1 className="sm:text-[30px] lg:text-[24px] xs:text-[26px] text-[19px]">
           I`m{" "}
-          <span className="dark:text-yellow-900 text-gray-700 font-poppins font-black">
+          <span className="dark:text-gray-200 text-gray-700 font-poppins font-black">
             Sunday David U.
           </span>
         </h1>
@@ -27,32 +27,20 @@ const Hero = () => {
               loop: true,
               strings: [
                 "Fullstack Software Engineer",
-                "Springboot Backend Developer",
-                "NextJs Developer",
-                "ReactJs Developer",
-                "Nodejs Developer",
-                "Wordpress Developer",
+                "Technical writter",
+                "CMS Developer",
               ],
             }}
           />
         </p>
         <p className="mt-5 font-comfortaa lg:px-14 px-0 font-light text-[16px] leading-7 lg:text-justify text-center dark:text-gray-200 text-gray-900">
-          Sunday is a versatile and highly skilled Software Engineer, adept at
-          building, and designing scalable and performant systems. Proven
-          ability to translate architectures and designs into clean, and
-          maintainable code using{" "}
-          <b>Nextjs, Reactjs, Springboot, Nodejs & Wordpress </b>. Sunday has a
-          strong track record of designing, building, deploying and hosting web,
-          and backend services. He has collaborated with cross-functional teams
-          to deliver high-quality products for manay companies.
+          Sunday is a versatile and results-driven Software Engineer with a passion for crafting scalable, high-performance applications. With hands-on experience in both frontend and backend development, he brings ideas to life through clean, maintainable, and efficient code. His core expertise spans across modern web and mobile technologies, including <b>Next.js, React.js, Vue.js, Nuxt.js, Node.js, React Native (CLI/Expo), and WordPress</b>.
         </p>
-        <p className=" mt-7 font-comfortaa lg:px-14 px-0 font-light text-[16px] leading-7 lg:text-justify text-center dark:text-gray-200 text-gray-900">
-          Sunday is well-versed in various programming languages like
-          Javascript, Typescript, Java and other frameworks. His philosophy
-          centers on creating innovative and cost-effective software solutions
-          that go beyond just building software. Eager to apply experience in a
-          fast-paced atmosphere and contribute to a company developing unique
-          goods
+        <p className="mt-7 font-comfortaa lg:px-14 px-0 font-light text-[16px] leading-7 lg:text-justify text-center dark:text-gray-200 text-gray-900">
+          Sunday is also highly proficient in tools and frameworks such as <b>Tailwind CSS, Git, Firebase, MongoDB, Express.js, and REST APIs</b>, enabling him to build full-stack applications from the ground up. He is fluent in programming languages like <b>JavaScript, TypeScript, and Rust</b>, and thrives in collaborative environments, having worked with cross-functional teams to deliver high-impact products across diverse industries.  
+        </p>
+        <p className="mt-7 font-comfortaa lg:px-14 px-0 font-light text-[16px] leading-7 lg:text-justify text-center dark:text-gray-200 text-gray-900">
+          Guided by a problem-solving mindset and a drive for innovation, Sunday is committed to creating solutions that are not just functional, but meaningful and cost-effective. He’s eager to contribute his experience and energy to teams building next-generation digital experiences in fast-paced, forward-thinking environments.
         </p>
 
         <div className="flex justify-start items-center sm:gap-10 gap-3 mt-4 sm:mt-8 lg:mt-10">
@@ -75,9 +63,9 @@ const Hero = () => {
           <img
             src={dav}
             alt="david-sunday"
-            className="z-10 absolute top-0 left-0 right-0 bottom-0 m-auto dark:bg-gray-900 bg-gray-600 pt-3 w-[280px] h-[260px] rounded-[20px] img-anime"
+            className="z-10 absolute object-cover top-0 left-0 right-0 bottom-0 m-auto dark:bg-gray-900 bg-gray-600 pt-3 w-[280px] h-[260px] rounded-[20px] img-anime"
           />
-          <div className="z-20 absolute sm:bottom-40 bottom-28 rounded-[9px] sm:left-32 xl:left-56 left-32 lg:left-38 bg-gray-900 px-3 py-2 cursor-pointer flex gap-x-3 gap-y-2 items-center">
+          <div className="z-20 absolute sm:bottom-40 bottom-28 rounded-[9px] sm:left-32 xl:left-60 left-32 lg:left-38 bg-gray-900 px-3 py-2 cursor-pointer flex gap-x-3 gap-y-2 items-center">
             {contactinfo.map((contact, index) => (
               <a href={contact.url} target="_blank" key={index}>
                 <img

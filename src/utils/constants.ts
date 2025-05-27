@@ -6,12 +6,12 @@ import {
   ln,
   wt,
   x,
-  java,
-  springboot,
   others,
   javascript,
   typescript,
-  tailwind,
+  wordpress,
+vue,
+nuxt,
   reactjs,
   book,
   expense,
@@ -42,13 +42,13 @@ export const navLinks = [
 ];
 
 export const contactinfo = [
-  { pic: email, url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sundayudoekong1@gmail.com" },
-  { pic: fb, url: "https://web.facebook.com/bianca.sunny.397/" },
+  { pic: email, url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hellotosunday@gmail.com" },
+  { pic: fb, url: "https://www.facebook.com/bianca.sunny.397" },
   { pic: gt, url: "https://github.com/sundayjava" },
   { pic: ig, url: "https://www.instagram.com/sundaydavidudoekong/" },
-  { pic: ln, url: "https://www.linkedin.com/in/sunday-udoekong-951369266" },
+  { pic: ln, url: "https://www.linkedin.com/in/sunday-udoekong-951369266/" },
   { pic: wt, url: "https://wa.me/message/OHCJXEQFXCUOB1" },
-  { pic: x, url: "https://x.com/Sunday_David_U?t=LImnpTdP5uy4-oRw90M8vA&s=09" },
+  { pic: x, url: "https://x.com/HellotoSunday" },
 ];
 
 export const technologies = [
@@ -61,10 +61,6 @@ export const technologies = [
     icon: javascript,
   },
   {
-    name: "Java",
-    icon: java,
-  },
-  {
     name: "Next JS",
     icon: next,
   },
@@ -73,16 +69,20 @@ export const technologies = [
     icon: reactjs,
   },
   {
+    name: "Nuxt JS",
+    icon: nuxt,
+  },
+  {
+    name: "Vue JS",
+    icon: vue,
+  },
+  {
+    name: "Wordpress",
+    icon: wordpress,
+  },
+  {
     name: "Node JS",
     icon: node,
-  },
-  {
-    name: "Springboot",
-    icon: springboot,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Others",

@@ -19,12 +19,18 @@ import goggl from "./business/goggl.png";
 import hoob from "./business/hoob.png";
 import portfolio from "./business/portfolio.png";
 import quote from "./business/quote.png";
-import globe from "./globe.svg"
-import node from "./node.jpeg"
-import next from "./next.svg"
+import globe from "./globe.svg";
+import node from "./node.jpeg";
+import next from "./next.svg";
+import wordpress from "./wordpress.jpeg";
+import vue from "./vue.jpeg";
+import nuxt from "./nuxt.webp";
 
 export {
   email,
+  wordpress,
+  vue,
+  nuxt,
   fb,
   gt,
   ig,
@@ -47,5 +53,5 @@ export {
   portfolio,
   quote,
   node,
-  next
+  next,
 };

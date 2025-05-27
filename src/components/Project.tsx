@@ -106,7 +106,7 @@ const Project = () => {
 
       <div className="mt-9 bg-gray-800 py-2 px-4 cursor-pointer rounded-lg hover:bg-slate-600">
         
-          <span className="font-black ml-2 hover:underline ">
+          <span className="font-black ml-2 hover:underline text-white">
             <a href="https://github.com/sundayjava" target="_blank">
               View More
             </a>
